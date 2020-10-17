@@ -1,7 +1,7 @@
 {
   "name": "Pearson",
   "description": "Pearson correlation",
-  "tags": ["simple statistics"],
+  "tags": ["basic statistics", "statistical testing", "test"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/pearson_operator"],
   "properties": []
