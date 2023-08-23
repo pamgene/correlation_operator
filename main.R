@@ -20,7 +20,7 @@ do.pearson = function(df, ...){
 
 ctx = tercenCtx() 
 
-if (!(ctx$hasNumericXAxis)) stop('A numeric x axis is required')
+if (!(ctx$hasNumericXAxis || ctx$isPairwise)) stop('A numeric x axis is required')
 
 ctx %>% 
   select(.ci, .ri, .x, .y) %>% 
