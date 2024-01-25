@@ -1,10 +1,15 @@
 {
   "name": "Pearson",
   "description": "Pearson’s Correlation Coefficient measures the statistical relationship between two continuous variable. It gives information about the magnitude and direction of the relationship.",
-  "tags": ["basic statistics", "statistical testing", "test"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/pearson_operator"],
+  "tags": [
+    "descriptive statistics",
+    "statistical testing"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/pearson_operator"
+  ],
   "properties": []
 }
-
-
