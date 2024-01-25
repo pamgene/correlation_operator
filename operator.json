@@ -11,5 +11,13 @@
   "urls": [
     "https://github.com/tercen/pearson_operator"
   ],
-  "properties": []
+  "properties": [
+    {
+      "kind": "EnumeratedProperty",
+      "name": "method",
+      "defaultValue": "pearson",
+      "values": ["pearson", "kendall", "spearman"],
+      "description": "Correlation test method to be used."
+    }
+  ]
 }
