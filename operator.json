@@ -1,6 +1,6 @@
 {
-  "name": "Pearson",
-  "description": "Pearson’s Correlation Coefficient measures the statistical relationship between two continuous variable. It gives information about the magnitude and direction of the relationship.",
+  "name": "Correlation",
+  "description": "Computes the correlation coefficient between two continuous variables.",
   "tags": [
     "descriptive statistics",
     "statistical testing"
@@ -16,7 +16,11 @@
       "kind": "EnumeratedProperty",
       "name": "method",
       "defaultValue": "pearson",
-      "values": ["pearson", "kendall", "spearman"],
+      "values": [
+        "pearson",
+        "kendall",
+        "spearman"
+      ],
       "description": "Correlation test method to be used."
     }
   ]
