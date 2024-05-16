@@ -1,6 +1,8 @@
-library(tercen)
-library(dplyr)
- 
+suppressPackageStartupMessages({
+  library(tercen)
+  library(dplyr)
+})
+
 do.cortest = function(df, ...) {
   
   result = try(cor.test(df$.x,df$.y, ...), silent = TRUE)

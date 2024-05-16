@@ -1,20 +1,24 @@
-# Pearson correlation operator
+# Correlation
 
 ##### Description
 
-`pearson` operator computes Pearson's correlation of two input sets of data per cell.
+This operator computes Pearson's correlation of two input sets of data per cell.
 
 ##### Usage
 
-Input projection|.
+Input|.
 ---|---
 `x-axis`  | value of one group of data
 `y-axis` | value of other group of data
 
-Output relations|.
+Settings|.
 ---|---
-`cor`| numeric, pearson correlation calculated per cell
-`pv`| numeric, p-value calculated per cell
+`method`  | Correlation test method to be used.
+
+Output|.
+---|---
+`cor_coef`| numeric, correlation coefficient calculated per cell
+`p_value`| numeric, p-value calculated per cell
 
 ##### Details
 
