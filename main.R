@@ -20,14 +20,25 @@ do.cortest = function(df, ...) {
                      p_value = result$p.value))
 }
 
+getDataFrame = function(ctx){
+  df = ctx %>% 
+    select(.ci, .ri, .x, .y) 
+  
+  if(!ctx$hasNumericXAxis){
+    df = df %>% 
+      mutate(.x = .x %>% as.factor %>%  as.numeric)
+  }
+  df
+}
+
 ctx = tercenCtx() 
 
-if (!(ctx$hasNumericXAxis || ctx$isPairwise)) stop('A numeric x axis is required')
+#if (!(ctx$hasNumericXAxis || ctx$isPairwise)) stop('A numeric x axis is required')
 
 method <- ctx$op.value("method", as.character, "pearson")
 
 ctx %>% 
-  select(.ci, .ri, .x, .y) %>% 
+  getDataFrame() %>% 
   group_by(.ci, .ri) %>%
   do(do.cortest(., method = method)) %>%
   ctx$addNamespace() %>%

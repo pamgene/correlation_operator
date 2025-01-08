@@ -1,6 +1,6 @@
 {
-  "name": "Correlation",
-  "description": "Computes the correlation coefficient between two continuous variables.",
+  "name": "Correlation (with Factor)",
+  "description": "Computes the correlation coefficient between two variables",
   "tags": [
     "descriptive statistics",
     "statistical testing"
@@ -9,7 +9,7 @@
     "tercen"
   ],
   "urls": [
-    "https://github.com/tercen/correlation_operator"
+    "https://github.com/pamgene/correlation_operator"
   ],
   "properties": [
     {
